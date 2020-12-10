@@ -1,0 +1,504 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: absolute;
+  width: 3vw;
+  height: 3vw;
+  left: 5vw;
+  top: 13vw;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #373a47;
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+  background: #a90000;
+}
+
+/* Position and sizing of clickable cross button */
+/* .bm-cross-button {
+  height: 24px;
+  width: 24px;
+} */
+
+/* Color/shape of close button cross */
+/* .bm-cross {
+  background: #bdc3c7;
+} */
+
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+  position: fixed;
+  height: 100vw;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #373a477a;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 0.8em;
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.Modal {
+  position:fixed;
+  background: white;
+  width: 50%;
+  height: auto;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+
+.display-block {
+  display: block;
+}
+.three-columns{
+  background-color: black;
+  height: auto;
+}
+.display-none {
+  display: none;
+}
+.Header-social-media {
+  display: grid;
+  text-align: left;
+  padding: 20px;
+
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+@media (max-width: 1000px) {
+  .Phone{
+    font-size: 2.5vw;
+  }
+  .about-text{
+    font-size: 4vw;
+  }
+  .three-columns{
+    display: grid;
+    grid-template-rows: 400px 400px 400px;
+  }
+  .Menu-item {
+    margin:auto;
+    font-size: 2.5vh;
+  }
+  .Menu-order {
+    margin:auto;
+    font-size: 2.5vh;
+  }
+  .btn-primary{
+    font-size: 4vw;
+  }
+  .btn-popup{
+    font-size: 4vw;
+  }
+  #About-text{
+    font-size: 6vw;
+  }
+  .About{
+    grid-column: 1vw;
+  }
+  .two-columns{
+    grid-template-rows: 100vw 100vw;
+  }
+  .Header-logo {
+    /*  */
+    
+  }
+  .black-bandaid{
+    background-color: black;
+    height: 15%;
+  }
+}
+@media (min-width: 1000px) {
+  .Header{
+    height: 50vh;
+  }
+  .Phone{
+    font-size: 2vw;
+  }
+  .about-text{
+    font-size: 2vw;
+  }
+
+  .three-columns{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 400px;
+  }
+  .About{
+
+    grid-template-columns: 50% 50%;
+  }
+  .blur {
+    filter: blur(1px);
+  }
+  .two-columns{
+    grid-template-columns: 50% 50%;
+
+  }
+  .Menu-item {
+    font-size: 2vw;
+  }
+  .Menu-order {
+    font-size: 2vw;
+  }
+}
+.Banner{
+  background: #7d6950;
+  height: auto;
+}
+.Popup{
+  background: white;
+  height: 100px;
+
+}
+.fb-page span{
+  height: 80%;
+}
+.Modal button{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+facebook-feed{
+  display: flex;
+  align-items: center;
+}
+.Plain-p{
+  font-family: monospace;
+  font-size: 1vw;
+  color: black;
+}
+.header-callout {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #f0e1aa;
+  font-size: 4vw;
+  font-weight: bold;
+  line-height: 40px;
+}
+/* // HOST=192.168.236.26 PORT=2000 */
+.popup-callout{
+  font-family: Arial, Helvetica, sans-serif;
+  color: #89711a;
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 40px;
+}
+.btn-popup{
+  /* background: blue;
+  color:white;
+  border-color: blue;
+  color: #f0e1aa;
+  font-size: 24px;
+  font-family: 'Monospace', Times, serif; */
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+  box-shadow: 5px 5px 0px 0px rgba(181, 232, 169, 0.305);
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+    border-radius: 0px;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    background:  #4CAF50;
+    border-color:  #4CAF50;
+    text-shadow: 2px 2px black;
+}
+#directions{
+  margin-top: 5%;
+  color: white;
+  text-shadow: 2px 2px black;
+  width: 100%;
+  background-color: #45a049;
+}
+.btn-primary {
+  /* background: #4CAF50;
+  color: #231f20;
+  border-color: #4CAF50;
+  font-family: 'Londrina Solid', cursive;
+  color: #f0e1aa; */
+  font-size: 2vw;
+  text-decoration: none;
+  font-weight: bold;
+  /* float: left; */
+  /* width: 15%; */
+  /* padding: .5em;
+  display: block;
+  margin-block-start: .5em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px; */
+  /* box-shadow: 5px 5px 0px 0px rgba(181, 232, 169, 0.305); */
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+    border-radius: 0px;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    background:  #4CAF50;
+    border-color:  #4CAF50;
+    text-shadow: 2px 2px black;
+}
+.text-center{
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.Float-left{
+  float: left;
+  margin-left: auto;
+}
+.Float-right{
+  float: right;
+  margin-left: .3vh;
+  padding-left: .1vh;
+}
+.shadow-title {
+  font-size: 4vw;
+  color: white;
+  text-shadow: 8px 8px black;
+}
+
+.Menu-link{
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 2vw;
+  font-weight: bold;
+}
+.White{
+  color: white;
+}
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+.Menu-item {
+  width: 16%;
+  color: white;
+  text-shadow: 4px 4px black;
+  padding: .5em;
+  display: block;
+  margin-block-start: .5em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  text-decoration: none;
+}
+.map {
+  margin-left:5%;
+  margin-right: 5%;
+}
+.map-right{
+  text-align: center;
+}
+.eighty-twenty{
+  display: grid;
+  grid-template-rows: 20% 80%;
+  margin-bottom: 3%;
+}
+.two-columns{
+  display: grid;
+  height: 50vh;
+  margin-bottom: 75px;
+}
+.Menu-order {
+  font-weight: bold;
+  float: left;
+  width: 100%;
+  padding: .5em;
+  margin-block-start: .5em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  box-shadow: 5px 5px 0px 0px rgba(181, 232, 169, 0.305);
+  color: white;
+    border-radius: 0px;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    background:  #4CAF50;
+    border-color:  #4CAF50;
+    text-shadow: 2px 2px black;
+}
+#About-text{
+  color:#bc906b;
+  text-shadow: 2px 2px black;
+}
+.About-left{
+  padding: 2-px;
+}
+.First-photo {
+  background-image: url("https://i.imgur.com/Uytz0JO.png");
+  background-size: cover;
+  height: auto;
+}
+.footer{
+  background-color: black;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+.Header {
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+}
+.Header-Menu{
+  margin-top: 100%;
+}
+.Header-logo {
+  display: grid;
+  background-image: url("../../imgonline-com-ua-Transparent-background-kJMFDBcMcbbN.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.Header-contact {
+  padding: 20px;
+  text-align: right;
+}
+.Nav-bar {
+  padding: 10px;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+.Cover {
+  height: auto;
+  margin: 0px;
+  padding: 10px;
+}
+.About {
+  display: grid;
+  
+  
+}
+.align-left{
+  text-align: left;
+}
+.contact-us{
+  margin-left: 20%;
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.white{
+  color: white;
+}
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
