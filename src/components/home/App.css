@@ -426,7 +426,7 @@ input[type=submit]:hover {
   padding: 2-px;
 }
 .First-photo {
-  background-image: url("https://i.imgur.com/Uytz0JO.png");
+  background-image: url("../../background.png");
   background-size: cover;
   height: auto;
 }
@@ -446,7 +446,7 @@ input[type=submit]:hover {
 }
 .Header-logo {
   display: grid;
-  background-image: url("../../imgonline-com-ua-Transparent-background-kJMFDBcMcbbN.png");
+  background-image: url("../../Final_logo.png");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;

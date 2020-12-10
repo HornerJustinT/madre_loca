@@ -4,7 +4,7 @@ import "./App.css";
 import { SocialIcon } from "react-social-icons";
 import { AiOutlinePhone } from "react-icons/ai";
 import { IconContext } from "react-icons";
-import menu from "../../shooters_menu.pdf";
+import menu from "../../Madre_Menu.pdf";
 import "reactjs-popup/dist/index.css";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
@@ -69,7 +69,7 @@ class HomePage extends Component {
         <Menu width = "45%">
         <a id="home" className="Menu-item" href="/">Home</a>
         <a id="about" className="Menu-item" href="#About">About</a>
-        <a id="contact" className="Menu-item" href="#About">Contact</a>
+        <a id="contact" className="Menu-item" href="#Contact">Contact</a>
         <button     onClick={(e) => {
       e.preventDefault();
       window.location.href="https://shooters.froogleonline.io/";
@@ -106,16 +106,16 @@ class HomePage extends Component {
               <div></div>
               <IconContext.Provider value={{ color: "white", size: "3vw" }}>
                 <div className="Float-right">
-                  <a href="tel:763-631-7468">
+                  <a href="tel:763-631-5622">
                     <AiOutlinePhone></AiOutlinePhone>
                   </a>
                 </div>
               </IconContext.Provider>
               {/* <p className="Float-right White">(763) 631-7468</p> */}
-              <a className="Float-right White Phone" href="tel:763-631-7468">
-                (763) 631-7468
+              <a className="Float-right White Phone" href="tel:763-631-5622">
+                (763) 631-5622
               </a>
-              <p className="Float-right White Phone">5584 MN-95, Princeton</p>
+              <p className="Float-right White Phone">301 21st Ave N Princeton</p>
             </div>
           </div>
 
@@ -156,21 +156,21 @@ class HomePage extends Component {
           <div className="About-left">
             <a name="About"></a>{" "}
             <h1 className="shadow-title" id="About-text">
-              Welcome to Shooters Sports Bar
+              Welcome to Madre Loca
             </h1>
             <p className="about-text">
-              Shooters is a sports bar located on highway 95, 4 miles west of
-              Princeton. Here at Shooters we value our hometown feel and
-              delicious food. Please come in and have a drink or try our home
+              Madre Loca is a Mexican restaurant located in Princeton. 
+              Here at Madre we value our delicous authentic Mexican food as well as our just as delicious American(Gringo) food
+              Please come in and have a Margarita or try our home
               cooked food. Enjoy!
             </p>
           </div>{" "}
           <div className="About-right">
             <img
-              title="Shooters Sports Bar Hamburger"
-              alt = "Shooters Sports Bar Hamburger"
+              title="Madre Loca Burrito"
+              alt = "Madre Loca Burrito"
               width="100%"
-              src="https://cdn.pixabay.com/photo/2016/05/25/10/43/hamburger-1414422_960_720.jpg"
+              src={"https://cdn.pixabay.com/photo/2016/08/01/20/10/mexican-food-1561970_960_720.jpg"}
             ></img>
           </div>
         </div>
@@ -244,7 +244,7 @@ class HomePage extends Component {
               >
                 <Page
                   className="facebook-feed"
-                  href="facebook.com/pages/category/Sports-Bar/Shooters-121490991194526/"
+                  href="facebook.com/pages/Madre-Loca-176505642359622/"
                   tabs="timeline"
                   height="320px"
                 />
@@ -259,7 +259,8 @@ class HomePage extends Component {
               <Map
                 // add directions link
                 style="mapbox://styles/mapbox/streets-v8"
-                center={[-93.522996, 45.586754]}
+                center={[-93.604948, 45.573205]}
+                
                 containerStyle={{
                   height: "80%",
                   width: "100%",
@@ -273,7 +274,7 @@ class HomePage extends Component {
                     "icon-color" : "red"
                 }}
                 >
-                  <Feature coordinates={[-93.522996, 45.586754]} />
+                  <Feature coordinates={[-93.604948, 45.573205]} />
                 </Layer>
                 <ZoomControl />
               </Map>
@@ -282,24 +283,26 @@ class HomePage extends Component {
     type="button"
     onClick={(e) => {
       e.preventDefault();
-      window.location.href="https://www.google.com/maps/dir//Shooters,+5584+MN-95,+Princeton,+MN+55371/@45.5868446,-93.525281,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x52b39f09b35095ef:0x8bb31db0b8b0f1f8!2m2!1d-93.5230923!2d45.5868446!3e0";
+      window.location.href="https://www.google.com/maps/dir//45.573205,-93.604948/@45.5732611,-93.6069326,17z/data=!4m2!4m1!3e0";
       }}
 > Directions</button>
             </div>
           </div>
+          
           <div className="white eighty-twenty">
             <div>
               <h1>Contact Us</h1>
             </div>
             <div className="white align-left contact-us">
-              <h2>Shooters Sports Bar</h2>
-              <h4>5584-MN-95</h4>
+            <a name="About"></a>{" "}
+              <h2>Madre Loca</h2>
+              <h4>301 21st Ave N</h4>
               <h4>Princeton, MN 55371</h4>
               <h4>
-                (763) 631-7468
+              (763) 631-5622
                 <a
                   className="Float-right White Phone"
-                  href="tel:763-631-7468"
+                  href="tel:763-631-5622"
                 />
               </h4>
             </div>
